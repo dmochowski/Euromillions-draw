@@ -1,0 +1,24 @@
+import random
+
+lista = list(range(1,51))
+lista2 = list(range(1,13))
+
+random.shuffle(lista)
+random.shuffle(lista2)
+
+nowaLista = []
+nowaLista2 = []
+
+i = 0
+j = 0
+while i < 5:
+    nowaLista.append(lista[i])
+    i += 1
+
+while j <2:
+    nowaLista2.append(lista2[j])
+    j += 1
+    
+nowaLista.sort()
+nowaLista2.sort()
+print("Your Euro Million numbers are:", nowaLista + nowaLista2)
