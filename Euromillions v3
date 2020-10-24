@@ -1,0 +1,21 @@
+import random
+
+euroNumbers = []
+luckyNumbers = []
+
+while len(euroNumbers) < 5:
+    euroNumber = random.randint(1,50) # 1 and 50 are included
+    if euroNumber in euroNumbers:
+        continue
+    euroNumbers.append(euroNumber)
+
+while len(luckyNumbers) < 2:
+    luckyNumber = random.randint(1,10)
+    if luckyNumber in luckyNumbers:
+        continue
+    luckyNumbers.append(luckyNumber)
+
+euroNumbers.sort()
+luckyNumbers.sort()
+
+print("Your Euro Million numbers are:", euroNumbers + luckyNumbers)
